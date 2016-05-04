@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<title>首页</title>
 	<link rel="stylesheet" href="dest/common.css">
 	<link rel="stylesheet" href="dest/home.css">
 
 	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
 	<script src="./js/flexibility.js"></script>
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+	<!--[if lt IE 11]>
+	<script>
+		window.location.href = "./incompatible.html"
+	</script>
 	<![endif]-->
 	<script>
 		$(document).ready(function() {
@@ -121,13 +122,72 @@
 	</div>
 	<div class="step wp">
 		<div class="no">
-			<img src="images/no1.png" alt="">
+			<!--细化-->
+			<img src="images/home_no1_title.png" alt="">
+			<div class="no1">
+				<div class="no1_left">
+					<div class="no1_left_tab">
+						<div class="title" id="title1">眉部</div>
+						<div class="tab_imgs">
+							<div class="tab_img_text">
+								<img src="images/home_no1_image1.png" alt="">
+								<span>眉损伤、眉中斑痕，难以掩饰</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image2.png" alt="">
+								<span>眉形不对称，他人眼光怪</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image3.png" alt="">
+								<span>眉毛稀疏、色浅，缺乏美感</span>
+							</div>
+						</div>
+					</div>
+					<div class="no1_left_tab">
+						<div class="title" id="title2">眼部</div>
+						<div class="tab_imgs">
+							<div class="tab_img_text">
+								<img src="images/home_no1_image4.png" alt="">
+								<span>睫毛稀疏，眼线不够明显</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image5.png" alt="">
+								<span>睫毛稀疏，眼线不够明显</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image6.png" alt="">
+								<span>倒睫和眼袋术后瘢痕，很是困扰</span>
+							</div>
+						</div>
+					</div>
+					<div class="no1_left_tab">
+						<div class="title" id="title3">唇部</div>
+						<div class="tab_imgs">
+							<div class="tab_img_text">
+								<img src="images/home_no1_image7.png" alt="">
+								<span>唇过厚（过薄），五官不协调</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image8.png" alt="">
+								<span>唇部暗淡无光，无精打采</span>
+							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image9.png" alt="">
+								<span>唇过厚（过薄），五官不协调</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="no1_right">
+					<img src="images/home_no1_image_big.png" alt="">
+				</div>
+			</div>
 		</div>
 		<div class="no">
 			<!--细化-->
 			<img src="images/no2_title.png" alt="">
 			<div class="buttons">
-				<a>自然开运眉</a>
+				<a class="selected">自然开运眉</a>
 				<a>深邃动感眼线</a>
 				<a>密语柔润唇</a>
 			</div>
@@ -184,10 +244,68 @@
 			</div>
 
 
-			<img src="images/no2_down.png" alt="">
+			<!--喜欢-->
+			<div class="no2_down">
+				<div class="no2_down_tab">
+					<img src="images/home_no2_pro.png" alt="">
+					<span class="desc">艺星飘乳晕，将色素暗哑、发黑变色的乳晕恢复为色泽红润、细腻自然形态。
+飘乳晕适合因哺乳乳晕变暗的新妈妈；乳晕发黑者；年龄增长乳晕变色的女性。<a href="#">【了解更多】</a></span>
+				</div>
+				<div class="no2_down_tab">
+					<img src="images/home_no2_pro.png" alt="">
+					<span class="desc">艺星飘乳晕，将色素暗哑、发黑变色的乳晕恢复为色泽红润、细腻自然形态。
+飘乳晕适合因哺乳乳晕变暗的新妈妈；乳晕发黑者；年龄增长乳晕变色的女性。<a href="#">【了解更多】</a></span>
+				</div>
+				<div class="no2_down_tab">
+					<img src="images/home_no2_pro.png" alt="">
+					<span class="desc">艺星飘乳晕，将色素暗哑、发黑变色的乳晕恢复为色泽红润、细腻自然形态。
+飘乳晕适合因哺乳乳晕变暗的新妈妈；乳晕发黑者；年龄增长乳晕变色的女性。<a href="#">【了解更多】</a></span>
+				</div>
+				<div class="no2_down_tab">
+					<img src="images/home_no2_pro.png" alt="">
+					<span class="desc">艺星飘乳晕，将色素暗哑、发黑变色的乳晕恢复为色泽红润、细腻自然形态。
+飘乳晕适合因哺乳乳晕变暗的新妈妈；乳晕发黑者；年龄增长乳晕变色的女性。<a href="#">【了解更多】</a></span>
+				</div>
+			</div>
 		</div>
 		<div class="no">
-			<img src="images/no3.png" alt="">
+			<img src="images/home_no3_title.png" alt="">
+			<div class="no3_teacher">
+				<div class="no3_left">
+					<img src="images/home_no3_teacher_image.png" alt="">
+					<div class="content">
+						<span class="title">朱苗</span>
+						<div class="award">
+							<span>2009韩国K-BEAUTY技术金奖</span>
+							<span>2010年获中国纹绣专家称号</span>
+							<span>2015年成为亚洲纹绣网合作伙伴</span>
+							<span>2015成为新加坡艺术纹绣学院会员</span>
+							<span>2016年受邀亚洲纹绣万人大赛评委</span>
+							<span>担任魅视雅国际化妆学院纹绣技术总监</span>
+							<span>当任XM.Beauty形象美学纹绣技术总监</span>
+						</div>
+						<span class="desc">朱苗专家从事医学美容临床工作近10年，主持参加各级课题七项，发表相关论文数篇，还多次参加国内...<a href="#">【详情】</a></span>
+						<span class="pros"><b>擅长项目:</b>粉黛眉、仿真眉、美瞳线、发际线、嘟嘟唇</span>
+						<button>咨询专家</button>
+					</div>
+				</div>
+				<div class="no3_right">
+					<span class="title">纹绣热点问答:</span>
+					<div class="faq_tab">
+						<span class="question">纹眉对身体有伤害吗？</span>
+						<span class="answer">纹眉对身体没有危害。现在，纹绣技术非常成熟，操作手法灵活；同时，使用的都是进口安全色料，经国家认可……<a href="">【详细】</a></span>
+					</div>
+					<div class="faq_tab">
+						<span class="question">纹眉对身体有伤害吗？</span>
+						<span class="answer">纹眉对身体没有危害。现在，纹绣技术非常成熟，操作手法灵活；同时，使用的都是进口安全色料，经国家认可……<a href="">【详细】</a></span>
+					</div>
+					<div class="faq_tab">
+						<span class="question">纹眉对身体有伤害吗？</span>
+						<span class="answer">纹眉对身体没有危害。现在，纹绣技术非常成熟，操作手法灵活；同时，使用的都是进口安全色料，经国家认可……<a href="">【详细】</a></span>
+					</div>
+				</div>
+			</div>
+			
 			<div class="resource">
 				<div id="title">相关资讯</div>
 				<div id="container">
@@ -233,7 +351,47 @@
 			</div>
 		</div>
 		<div class="no">
-			<img src="images/no4.png" alt="">
+			<!--no4 细化-->
+			<div class="no4">
+				<div class="no4_left">
+					<img src="images/home_no4_image1.png" alt="">
+					<div class="no4_left_right">
+						<span class="title">星韩美</span>
+						<img src="images/home_no4_image2.png" alt="">
+						<span class="sub_title">高端国际连锁品牌，更有实力</span>
+						<span class="sub_content">具有纯韩血统的高端，国际医疗美容连锁品牌，已成为世界一流的医疗美容连锁机构。</span>
+						<img src="images/home_no4_image3.png" alt="">
+					</div>
+				</div>
+				<div class="no4_right">
+					<div class="no4_right_lr_tab">
+						<div class="no4_right_content">
+							<div class="title">人性化随访服务，更放心</div>
+							<div class="desc">在您回到家中，我们的服务并未停止。客服部会实行定期随访服务，为你解答疑问，美的安心放心。</div>
+						</div>
+						<img src="images/home_no4_image4.png" alt="">
+					</div>
+					<div class="no4_right_lr_tab">
+						<div class="no4_right_content">
+							<div class="title">人性化随访服务，更放心</div>
+							<div class="desc">在您回到家中，我们的服务并未停止。客服部会实行定期随访服务，为你解答疑问，美的安心放心。</div>
+						</div>
+						<img src="images/home_no4_image5.png" alt="">
+					</div>
+					<div class="no4_right_tb_tabs">
+						<div class="no4_right_tb_tab">
+							<div class="title">人性化随访服务，更放心</div>
+							<div class="desc">在您回到家中，我们的服务并未停止。客服部会实行定期随访服务，为你解答疑问，美的安心放心。</div>
+							<img src="images/home_no4_image6.png" alt="">
+						</div>
+						<div class="no4_right_tb_tab">
+							<div class="title">人性化随访服务，更放心</div>
+							<div class="desc">在您回到家中，我们的服务并未停止。客服部会实行定期随访服务，为你解答疑问，美的安心放心。</div>
+							<img src="images/home_no4_image7.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="theme" class="wp">
@@ -262,11 +420,14 @@
 <div class="footer">
 	<img src="images/footer.png" alt="">
 </div>
-
-
 <div id="chat">
 	<div class="container">
 		<div class="img"></div>
+		<div class="form">
+			<input id="form_input1" placeholder="您的姓名" type="text">
+			<input id="form_input2" placeholder="您的电话" type="text">
+			<button></button>
+		</div>
 
 	</div>
 </div>
