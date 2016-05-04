@@ -1,0 +1,40 @@
+div .nav .wp ul #story a{
+    color: #AB8751;
+}
+
+div.story {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+div.story .tabs {
+    flex-wrap:wrap;
+    display: flex;
+    justify-content:space-around;
+}
+div.story .tab {
+    margin-top: 20px;
+    width: 236px;
+    background: #F8F8F8;
+}
+
+div.story .tab .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.story .tab .content span {
+    padding: 10px;
+    font-size: 20px;
+    color: #15191A;
+}
+
+div.story .tab .content .detail {
+    padding-top: 0px;
+    font-size: 18px;
+    color: #AB8751;
+}

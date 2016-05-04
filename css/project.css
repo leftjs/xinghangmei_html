@@ -1,0 +1,46 @@
+
+div .nav .wp ul #project a{
+    color: #AB8751;
+}
+
+div .menus {
+    width: 972px;
+    margin: 10px auto;
+    height: 74px;;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background: url("../images/project_menus.png");
+}
+
+div .menus .menu {
+    width: 81px;
+    height: 74px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+div .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+div .items .item {
+    margin-top: 50px;
+
+    width: 309px;
+    height: auto;
+}
+
+
+div .items .item a {
+    display: block;
+    margin: 0 auto;
+    width: inherit;
+    text-align: center;
+    text-decoration: none;
+}

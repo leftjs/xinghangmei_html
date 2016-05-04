@@ -1,0 +1,23 @@
+div .nav .wp ul #case a{
+    color: #AB8751;
+}
+
+.center .banner img {
+    width: 100%;
+    min-width: 960px;
+}
+
+.center .case_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center .case_items .title {
+    margin: 90px 0 70px 0;
+}
+
+.center .case_items .content {
+    cursor: pointer;
+}

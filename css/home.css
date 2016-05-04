@@ -1,0 +1,353 @@
+
+div .nav .wp ul #home a{
+    color: #AB8751;
+}
+/* center */
+/* banner */
+.center .banner img {
+    cursor: pointer;
+    width: 100%;
+    min-width: 960px;
+}
+
+.center .tabs {
+    width: 380px;
+}
+.center .tabs .tabs_title span{
+    font-size: 28px;
+    padding: 25px 0;
+    display: block;
+
+}
+
+.center .tabs .head_tabs_content{
+    margin-left: 10px;
+}
+.center .tabs .head_tabs_content span {
+    font-size: 15px;
+    width: 173px;
+    word-break:normal;
+    display:block;
+    white-space:pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.center .tabs .head_tabs_content span.title {
+    height: 42px;
+    line-height: 13px;
+}
+
+
+.center .tabs .head_tabs_content .tabs_content span {
+    font-size: 13px;
+    color: #7F7F7F;
+    display: inline-block;
+    line-height: 22px;
+}
+
+.center .tabs .normal_tabs {
+    border-top: 1px dashed #979797;
+    margin-top: 10px;
+}
+
+.center .tabs .normal_tabs ul {
+    list-style: none;
+    float: left;
+    width: 188px;
+}
+
+
+.center .tabs .normal_tabs ul li {
+    font-size: 12px;
+    color: #535353;
+}
+
+
+/* step */
+
+.center .step .no .buttons {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 962px;
+    height: 50px;
+}
+
+.center .step .no .buttons a {
+    font-size: 21px;
+    color: black;
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.center .step .no .buttons a.selected {
+    color: #AB8751;
+}
+
+.center .step .no .buttons a.selected::before {
+    content: ' ';
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    background: url("../images/home_no_arrow.png");
+    top: 48px;
+    left: 151px;
+    z-index: 2;
+}
+
+
+.center .step .no>img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.center .step .no .no2_container {
+    width: 960px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-top: none;
+
+}
+
+.center .step .no .no2_container .no_left {
+    width: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.center .step .no .no2_container .no_left .no_top1 {
+    height: 100px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.center .step .no .no2_container .no_left .no_top {
+    
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center .step .no .no2_container .no_left .no_top .line {
+    width: inherit;
+    height: 1px;
+    border-bottom: 1px dashed gray;
+}
+
+.center .step .no .no2_container .no_left .no_top img {
+    width: 127px;
+    height: 100px;
+}
+.center .step .no .no2_container .no_left .no_top .content {
+    margin-left: 20px;
+    height: 100px;
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center .step .no .no2_container .no_left .no_top .content span {
+    color: black;
+}
+.center .step .no .no2_container .no_left .no_top .content span.title {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.center .step .no .no2_container .no_left .no_top .content span.desc {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: gray;
+}
+.center .step .no .no2_container .no_left .no_top .content span a {
+    text-decoration: none;
+    color: #AB8751;
+
+}
+
+.center .step .no .no2_container .no_left .no_down {
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+
+}
+
+.center .step .no .no2_container .no_left .no_down .tab {
+    width: 195px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+}
+.center .step .no .no2_container .no_left .no_down .tab img {
+    margin-top: 10px;
+}
+
+.center .step .no .no2_container .no_left .no_down .tab .tab_title {
+    width: inherit;
+    text-align: center;
+    font-size: 20px;
+}
+.center .step .no .no2_container .no_left .no_down .tab .tab_desc {
+    font-size: 12px;
+    color: gray;
+
+}
+
+.center .step .no .no2_container .no_right {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 461px;
+}
+
+.center .step .no .resource {
+    
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+}
+
+.center .step .no #title {
+    font-size: 36px;
+    color: #000;
+    align-self: center;
+}
+
+.center .step .no #container {
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+.center .step .no #container .tab {
+    border: 2px solid darkgrey;
+    margin-top: 20px;
+    background: #ffffff;
+    width: 257px;
+    height: 292px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center .step .no #container .tab .title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.center .step .no #container div ul {
+    list-style: none;
+}
+
+.center .step .no #container div ul a {
+    text-decoration: none;
+    color: #000;
+}
+.center .step .no #container div ul a:hover {
+    color: #AB8751;
+}
+
+.center #theme {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center #theme .title {
+    color: #AB8751;
+    font-size: 36px;
+}
+
+.center #theme .container {
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center #theme .container .tab {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.center #theme .container a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+.center #theme .container a:hover {
+    color: #AB8751;
+}
+
+
+
+/*chat*/
+div#chat {
+    width:100%;
+    position:fixed;
+    height:187px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+
+}
+div#chat .container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent 0, transparent 78px, transparent 78px,  rgba(42, 42, 42, 0.8) 0) ;
+    height: 187px;
+
+}
+div#chat .container .img {
+    width: 100%;
+    height: 187px;
+    background: url("../images/chat.png") no-repeat bottom;
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+
+
+
+

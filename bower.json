@@ -1,0 +1,20 @@
+{
+  "name": "xinghanmei",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jason.Zhang <lefttjs@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "^3.7.3"
+  }
+}

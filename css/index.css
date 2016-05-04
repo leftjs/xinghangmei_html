@@ -1,0 +1,46 @@
+.center .banner{
+    cursor: pointer;
+    max-width: 1440px;
+    min-width: 960px;
+    width:100%;
+    margin-bottom: 0px;
+}
+
+.center .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center .design>img {
+    margin: 40px 0 40px 0;
+    cursor: pointer;
+}
+
+.center .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.center .items .item {
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.center .items .item img {
+    height: 213px;
+    width: inherit;
+}
+.center .items .item a {
+    margin-top: 10px;
+    color: #747474;
+    text-decoration: none;
+    font-size: 15px;
+}

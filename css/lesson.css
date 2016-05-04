@@ -1,0 +1,140 @@
+div .nav .wp ul #lesson a{
+    color: #AB8751;
+}
+
+.center img {
+    width: 960px;
+    margin: 20px 0 20px 0;
+}
+
+.center .teacher {
+    background: url("../images/lesson_teacher.png") no-repeat;
+    background-size: contain;
+    width: 960px;
+    height: 240px;
+    position: relative;
+}
+
+.center .teacher button {
+    position: absolute;
+    right: 358px;
+    bottom: 14px;
+    height: 27px;
+    width: 83px;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.center .learn_ad {
+    background: url("../images/lesson_learn_ad.png") no-repeat;
+    background-size: contain;
+    width: 960px;
+    height: 240px;
+    position: relative;
+}
+
+.center .learn_ad button {
+    position: absolute;
+    right: 357px;
+    bottom: 14px;
+    height: 37px;
+    width: 116px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.center .open {
+    background: url("../images/lesson_open.png") no-repeat;
+    height: 285px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: relative;
+}
+
+.center .open #name {
+    right: 184px;
+    bottom: 167px;
+    width: 100px;
+    height: 18px;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.3);
+}
+.center .open #email {
+    right: 184px;
+    bottom: 133px;
+    width: 100px;
+    height: 18px;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.3);
+}
+.center .open #number {
+    right: 184px;
+    bottom: 99px;
+    width: 100px;
+    height: 18px;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.3);
+}
+
+.center .open .radio_box {
+    color: white;
+    right: 183px;
+    bottom: 69px;
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.center .open .select_box {
+    color: white;
+    right: 183px;
+    bottom: 32px;
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.float {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: url("../images/lesson_float_ad.png") no-repeat center;
+    width: 216px;
+    /*height: 517px;*/
+    height: 100%;
+}
+.float button {
+    height: 517px;
+    width: inherit;
+    background: transparent;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
