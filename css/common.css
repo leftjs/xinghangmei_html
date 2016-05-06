@@ -125,14 +125,16 @@ body {
 /*footer*/
 .footer {
     margin-top: 10px;
-    /*display: flex;*/
-    /*justify-content: center;*/
+    display: flex;
+    justify-content: center;
     background: #231F20;
+    height: 82.7px;
 
     /*margin-bottom: 115px;*/
 }
 .footer img {
-    width: 100%;
+    width: 960px;
     min-width: 960px;
+    height: 82.7px;
 
 }

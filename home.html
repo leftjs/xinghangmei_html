@@ -5,25 +5,8 @@
 	<title>首页</title>
 	<link rel="stylesheet" href="dest/common.css">
 	<link rel="stylesheet" href="dest/home.css">
-
-	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-	<script src="./js/flexibility.js"></script>
-	<!--[if lt IE 11]>
-	<script>
-		window.location.href = "./incompatible.html"
-	</script>
-	<![endif]-->
-	<script>
-		$(document).ready(function() {
-			$(".buttons a").click(function() {
-				$(".buttons a").map(function(ele){
-					$(this).removeClass("selected")
-				})
-				$(this).addClass("selected")
-			})
-		})
-	</script>
-
+	<!--<link href="//cdn.bootcss.com/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="./bower_components/Swiper/dist/css/swiper.min.css">
 </head>
 <body>
 <div class="header">
@@ -66,7 +49,21 @@
 </div>
 <div class="center">
 	<div class="banner">
-		<img src="images/banner.png" alt="banner">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="swiper-slide-img"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper-slide-img"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper-slide-img"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="swiper-slide-img"></div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
 	</div>
 	<div class="content wp">
 		<div class="tabs left">
@@ -141,6 +138,11 @@
 								<img src="images/home_no1_image3.png" alt="">
 								<span>眉毛稀疏、色浅，缺乏美感</span>
 							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image3.png" alt="">
+								<span>眉毛稀疏、色浅，缺乏美感</span>
+							</div>
+
 						</div>
 					</div>
 					<div class="no1_left_tab">
@@ -158,6 +160,11 @@
 								<img src="images/home_no1_image6.png" alt="">
 								<span>倒睫和眼袋术后瘢痕，很是困扰</span>
 							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image6.png" alt="">
+								<span>倒睫和眼袋术后瘢痕，很是困扰</span>
+							</div>
+
 						</div>
 					</div>
 					<div class="no1_left_tab">
@@ -175,6 +182,11 @@
 								<img src="images/home_no1_image9.png" alt="">
 								<span>唇过厚（过薄），五官不协调</span>
 							</div>
+							<div class="tab_img_text">
+								<img src="images/home_no1_image9.png" alt="">
+								<span>唇过厚（过薄），五官不协调</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -187,17 +199,120 @@
 			<!--细化-->
 			<img src="images/no2_title.png" alt="">
 			<div class="buttons">
-				<a class="selected">自然开运眉</a>
-				<a>深邃动感眼线</a>
-				<a>密语柔润唇</a>
+				<a class="selected" id="tab0">自然开运眉</a>
+				<a id="tab1">深邃动感眼线</a>
+				<a id="tab2">密语柔润唇</a>
 			</div>
+
+			<div class="no2_container selected">
+				<div class="no_left">
+					<div class="no_top">
+						<div class="no_top1">
+							<img src="images/home_no2_img1.png" alt="">
+							<div class="content">
+								<span class="title">看名在眉1111111</span>
+								<span class="desc">长眉——时有好运，与人和睦相处，爱情美满；沟通合作顺畅，做事情有条理。
+短眉——有激情，桃花运多，但并非好事；个性倔强，做事无条理.............<a href="#">【了解更多】</a></span>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="no_top1">
+							<img src="images/home_no2_img2.png" alt="">
+							<div class="content">
+								<span class="title">看名在眉</span>
+								<span class="desc">长眉——时有好运，与人和睦相处，爱情美满；沟通合作顺畅，做事情有条理。
+短眉——有激情，桃花运多，但并非好事；个性倔强，做事无条理.............<a href="#">【了解更多】</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="no_down">
+						<div class="tab">
+							<span class="tab_title">个性化专属设计</span>
+							<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+						</div>
+						<div class="tab">
+							<span class="tab_title">个性化专属设计</span>
+							<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+						</div>
+						<div class="tab">
+							<span class="tab_title">个性化专属设计</span>
+							<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="no_right">
+					<img src="images/home_no2_img6.png" alt="">
+					<img src="images/home_no2_img7.png" alt="">
+					<img src="images/home_no2_img8.png" alt="">
+				</div>
+			</div>
+			<div class="no2_container">
+			<div class="no_left">
+				<div class="no_top">
+					<div class="no_top1">
+						<img src="images/home_no2_img1.png" alt="">
+						<div class="content">
+							<span class="title">看名在眉222222222</span>
+								<span class="desc">长眉——时有好运，与人和睦相处，爱情美满；沟通合作顺畅，做事情有条理。
+短眉——有激情，桃花运多，但并非好事；个性倔强，做事无条理.............<a href="#">【了解更多】</a></span>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="no_top1">
+						<img src="images/home_no2_img2.png" alt="">
+						<div class="content">
+							<span class="title">看名在眉</span>
+								<span class="desc">长眉——时有好运，与人和睦相处，爱情美满；沟通合作顺畅，做事情有条理。
+短眉——有激情，桃花运多，但并非好事；个性倔强，做事无条理.............<a href="#">【了解更多】</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="no_down">
+					<div class="tab">
+						<span class="tab_title">个性化专属设计</span>
+						<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+					</div>
+					<div class="tab">
+						<span class="tab_title">个性化专属设计</span>
+						<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+					</div>
+					<div class="tab">
+						<span class="tab_title">个性化专属设计</span>
+						<img src="images/home_no2_img3.png" alt="">
+							<span class="tab_desc">
+								根据眉毛生长方向、粗细、肤色及五官特点，个性化设计佳眉型，从设计就能看到绣眉后效果。
+							</span>
+					</div>
+				</div>
+			</div>
+			<div class="no_right">
+				<img src="images/home_no2_img6.png" alt="">
+				<img src="images/home_no2_img7.png" alt="">
+				<img src="images/home_no2_img8.png" alt="">
+			</div>
+		</div>
 			<div class="no2_container">
 				<div class="no_left">
 					<div class="no_top">
 						<div class="no_top1">
 							<img src="images/home_no2_img1.png" alt="">
 							<div class="content">
-								<span class="title">看名在眉</span>
+								<span class="title">看名在眉3333333</span>
 								<span class="desc">长眉——时有好运，与人和睦相处，爱情美满；沟通合作顺畅，做事情有条理。
 短眉——有激情，桃花运多，但并非好事；个性倔强，做事无条理.............<a href="#">【了解更多】</a></span>
 							</div>
@@ -432,6 +547,80 @@
 	</div>
 </div>
 
+<!--<script src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>-->
+<!--<script src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.jquery.min.js"></script>-->
+<script src="./bower_components/Swiper/dist/js/swiper.jquery.min.js"></script>
+<script src="./bower_components/Swiper/dist/js/swiper.min.js"></script>
 
+<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+<!--[if lt IE 11]>
+<script>
+	window.location.href = "./incompatible.html"
+</script>
+<![endif]-->
+<script>
+	var mySwiper = new Swiper ('.banner', {
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: 1,
+		paginationClickable: true,
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: 2500,
+		autoplayDisableOnInteraction: false,
+		// If we need pagination
+		pagination: '.swiper-pagination',
+	})
+
+
+	function setOffset(){
+
+	}
+
+	function resizeCircle(){
+		$('.no1 .no1_left .no1_left_tab .tab_imgs').map(function (ele) {
+//			console.log($(this).children().size())
+			var childNode = $(this).children()
+			$(this).children().first().remove()
+			$(this).append($(childNode.get(0)).clone(true).css('left', function() {
+				return (childNode.size() - 1) * (102 + 28) + 'px'
+			}))
+			childNode = $(this).children()
+			for(var i = 0; i < childNode.size(); i++){
+
+					$(childNode.get(i)).animate({'left':(102 + 28) * (i - 1) + 'px',opacity: 1})
+			}
+		})
+	}
+
+	$(document).ready(function() {
+		setInterval('resizeCircle()', 2000)
+//		resizeCircle()
+//		setInterval('resizeCircle()',1000)
+		$(".buttons a").click(function() {
+			$(".buttons a").map(function(ele){
+				$(this).removeClass("selected")
+			})
+			$(this).addClass("selected")
+//			console.log($(this).attr('id').substring(3,4))
+			$(".no2_container").map(function() {
+				$(this).removeClass('selected')
+
+			})
+			$($('.no2_container').get(parseInt($(this).attr('id').substring(3,4)))).addClass('selected')
+		})
+
+
+		$(window).scroll(function () {
+			if ($(document).scrollTop() + $(window).height() >= $(document).height() - 83) {
+				$('div#chat').hide()
+			}else{
+				$('div#chat').show()
+			}
+		});
+
+	})
+</script>
 </body>
 </html>

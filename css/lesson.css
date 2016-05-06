@@ -2,33 +2,198 @@ div .nav .wp ul #lesson a{
     color: #AB8751;
 }
 
-.center img {
-    width: 960px;
-    margin: 20px 0 20px 0;
+.center {
+    margin-top: 50px;
 }
 
-.center .teacher {
-    background: url("../images/lesson_teacher.png") no-repeat;
-    background-size: contain;
+/*intro*/
+.intro {
+    margin-top: 50px;
     width: 960px;
-    height: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.intro .intro_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.intro .content {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
 }
 
-.center .teacher button {
+.intro .content::after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #AB8751;
     position: absolute;
-    right: 358px;
-    bottom: 14px;
-    height: 27px;
-    width: 83px;
-    background: transparent;
+    left: 6px;
+    top: 7px;
+}
+
+.intro .detail_lr {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro .detail_single {
+    margin-top: 5px;
+}
+
+.intro #content1 {
+    margin-right: 100px;
+}
+
+.intro .detail_lr span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    padding: 5px 0px 5px 0px;
+}
+
+
+.intro .detail_single span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+}
+
+
+
+.intro .content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro .content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro .title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #6f534d;
+}
+
+
+/*teacher*/
+.center .teacher {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 240px;
+}
+
+.teacher .teacher_left {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    background: url("../images/lesson_teacher_bg1.png");
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher_left img {
+    width: 150px;
+    height: 150px;
+}
+.teacher_left span {
+    color: white;
+    margin-top: 10px;
+}
+
+.teacher .teacher_right {
+    width: 480px;
+    background: url("../images/lesson_teacher_bg2.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.teacher_right .award {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.teacher_right span{
+    color: white;
+    margin-left: 40px;
+}
+
+.teacher_right .title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.teacher_right button {
+    background: #AB8751;
     border-radius: 5px;
     outline: none;
     border: none;
     cursor: pointer;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+/*feature*/
+.feature {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature .feature_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.feature .feature_right .title {
+    font-size: 20px;
+    line-height: 24px;
+}
+.feature .feature_right .desc {
+    font-size: 15px;
+    line-height: 20px;
+    color: #7f7f7f;
+}
+
+
+
+/*compare */
+
+.compare {
+    margin-top: 50px;
+}
+.compare img {
+    width: 960px;
 }
 
 .center .learn_ad {
+    margin-top: 50px;
     background: url("../images/lesson_learn_ad.png") no-repeat;
     background-size: contain;
     width: 960px;
@@ -49,6 +214,7 @@ div .nav .wp ul #lesson a{
 }
 
 .center .open {
+    margin-top: 50px;
     background: url("../images/lesson_open.png") no-repeat;
     height: 285px;
     -webkit-background-size: contain;
@@ -118,6 +284,13 @@ div .nav .wp ul #lesson a{
     align-items: center;
 }
 
+/*plan  */
+.plan {
+    margin-top: 50px;
+}
+.plan img {
+    width: 960px;
+}
 .float {
     display: flex;
     flex-direction:column;

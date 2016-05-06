@@ -3,12 +3,54 @@ div .nav .wp ul #home a{
     color: #AB8751;
 }
 /* center */
+/* center */
 /* banner */
-.center .banner img {
-    cursor: pointer;
+.center .banner {
     width: 100%;
-    min-width: 960px;
+    height: 441px;
+    overflow: hidden;
+    position: relative;
+    background: white;
 }
+
+
+
+.center .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width:100%;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.center .swiper-slide-img {
+    background: url("../images/banner.png") no-repeat;
+    background-size: cover;
+    height: 441px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+.center .banner .swiper-pagination {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    z-index: 1;
+}
+
 
 .center .tabs {
     width: 380px;
@@ -74,6 +116,8 @@ div .nav .wp ul #home a{
     height: 50px;
 }
 
+
+
 .center .step .no .buttons a {
     font-size: 21px;
     color: black;
@@ -130,6 +174,7 @@ div .nav .wp ul #home a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 140px;
 }
 
 .no1 .no1_left .no1_left_tab .title {
@@ -182,12 +227,16 @@ div .nav .wp ul #home a{
 }
 
 .no1 .no1_left .no1_left_tab .tab_imgs {
+    overflow: hidden;
+    height: 110px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
 }
 
 .no1 .no1_left .no1_left_tab .tab_imgs .tab_img_text {
+    position: absolute;
+    left: 0px;
+    opacity: 0;
     border: 1px solid #9b9b9b;
     width: 102px;
     display: flex;
@@ -195,6 +244,7 @@ div .nav .wp ul #home a{
     justify-content: center;
     align-items: center;
 }
+
 
 .no1 .no1_left .no1_left_tab .tab_imgs .tab_img_text span {
     padding: 10px;
@@ -204,7 +254,6 @@ div .nav .wp ul #home a{
 }
 .center .step .no .no2_container {
     width: 960px;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -313,6 +362,22 @@ div .nav .wp ul #home a{
     flex-direction: column;
     justify-content: space-around;
     height: 461px;
+}
+
+.center .step .no .no2_container {
+    display: none;
+    overflow: hidden;
+    width: 0;
+    height:0;
+    border:none;
+}
+
+.center .step .no div.selected {
+    display: flex;
+    height:auto;
+    width: 960px;
+    border: 1px solid black;
+    border-top: none;
 }
 
 /*细化no2_down*/
@@ -679,6 +744,7 @@ div#chat {
     left:0px;
     right:0px;
     margin-bottom:0px;
+    z-index: 2;
 
 }
 div#chat .container {

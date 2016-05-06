@@ -10,7 +10,6 @@ div .menus {
     display: flex;
     justify-content: space-between;
     border: none;
-    background: url("../images/project_menus.png");
 }
 
 div .menus .menu {
@@ -18,8 +17,8 @@ div .menus .menu {
     height: 74px;
     border: none;
     outline: none;
-    background: transparent;
     cursor: pointer;
+
 }
 
 div .items {

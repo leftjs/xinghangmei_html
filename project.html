@@ -49,17 +49,17 @@
 
 <div class="center">
 	<div class="menus">
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
-		<button class="menu"></button>
+		<img src="images/project_menu0.png" alt="">
+		<img src="images/project_menu1_unselected.png" alt="" class="menu">
+		<img src="images/project_menu2_unselected.png" alt="" class="menu">
+		<img src="images/project_menu3_unselected.png" alt="" class="menu">
+		<img src="images/project_menu4_unselected.png" alt="" class="menu">
+		<img src="images/project_menu5_unselected.png" alt="" class="menu">
+		<img src="images/project_menu6_unselected.png" alt="" class="menu">
+		<img src="images/project_menu7_unselected.png" alt="" class="menu">
+		<img src="images/project_menu8_unselected.png" alt="" class="menu">
+		<img src="images/project_menu9_unselected.png" alt="" class="menu">
+		<img src="images/project_menu10_unselected.png" alt="" class="menu">
 	</div>
 	<div class="items wp">
 		<div class="item">
@@ -93,5 +93,21 @@
 <div class="footer">
 	<img src="images/footer.png" alt="">
 </div>
+
+<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.menu').click(function() {
+			$('.menu').map(function() {
+				var icon_path = $(this).attr('src')
+				if (icon_path.indexOf('unselected') === -1){
+					$(this).attr('src',icon_path.substring(0, icon_path.length - 4) + '_unselected.png')
+				}
+			})
+			var icon_path = $(this).attr('src')
+			$(this).attr('src', icon_path.substring(0, icon_path.length - 15) + '.png')
+		})
+	})
+</script>
 </body>
 </html>
