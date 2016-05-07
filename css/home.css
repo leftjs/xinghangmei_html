@@ -6,11 +6,12 @@ div .nav .wp ul #home a{
 /* center */
 /* banner */
 .center .banner {
-    width: 100%;
+    width: 1440px;
     height: 441px;
     overflow: hidden;
     position: relative;
     background: white;
+    margin: 0px auto;
 }
 
 
@@ -372,7 +373,7 @@ div .nav .wp ul #home a{
     border:none;
 }
 
-.center .step .no div.selected {
+.center .step .no .no2_container.selected {
     display: flex;
     height:auto;
     width: 960px;
@@ -561,6 +562,7 @@ div .nav .wp ul #home a{
 
 /*no4 细化*/
 .no4 {
+    margin-top: 50px;
     height: 577px;
     display: flex;
     flex-direction: row;
@@ -815,4 +817,145 @@ div#chat .container .form button {
 }
 
 
+.newDivFloat {
+    position: fixed;
+    bottom: 30%;
+    left: 30%;
+    margin-bottom: 0px;
+    z-index: 2;
+    width: 700px;
+    height: 449px;
+    background: url("../images/center.gif");
+}
+.newDivFloat textarea {
+    position: absolute;
+    left: 30px;
+    bottom: 5px;
+    width: 420px;
+    height: 75px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px;
+}
 
+.newDivFloat img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.newDivFloat a {
+    position: absolute;
+    bottom: 91px;
+    left: 29px;
+    text-decoration: none;
+    color: #AB8751;
+
+}
+.newDivFloat .send {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 26px;
+    right: 130px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background: #AB8751;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.newDivFloat .send:active {
+    background: #B09265;
+}
+
+.newDivFloat .refer {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 26px;
+    right: 18px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: red;
+}
+
+.newDivFloat .refer:active {
+    background: #F16C6C;
+
+}
+
+
+
+/* 资质*/
+.certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.certificate .certificate_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #efefef;
+    border-bottom: 1px solid #F3E2E2;
+    border-top: 1px solid #F3E2E2;
+}
+.certificate .certificate_buttons button {
+    height: 34px;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.certificate .certificate_buttons button.selected {
+    color: white;
+    background: #000;
+}
+
+.certificate .certificate_buttons button:active {
+    color: white;
+    background: #000;
+}
+
+.certificate .tabs {
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.certificate .tabs .tab {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate .tabs.selected {
+    display: flex;
+    width: 960px;
+    height: auto;
+
+}
