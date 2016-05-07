@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>首页</title>
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="dest/common.css">
+	<link rel="stylesheet" href="dest/home.css">
 	<!--<link href="//cdn.bootcss.com/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="./bower_components/Swiper/dist/css/swiper.min.css">
 </head>
@@ -15,7 +15,7 @@
 			<div class="left">
 				<span>
 					<a href="#">星韩美整形</a>
-				</span>css
+				</span>
 			</div>
 		</div>
 	</div>
@@ -51,16 +51,16 @@
 	<div class="banner">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<div class="swiper-slide-img"></div>
+				<div class="swiper-slide-img" id="banner1"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="swiper-slide-img"></div>
+				<div class="swiper-slide-img" id="banner2"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="swiper-slide-img"></div>
+				<div class="swiper-slide-img" id="banner3"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="swiper-slide-img"></div>
+				<div class="swiper-slide-img" id="banner4"></div>
 			</div>
 		</div>
 		<div class="swiper-pagination"></div>
@@ -750,11 +750,29 @@
 
 		$(".newDivFloat img").click(function(){
 			$(".newDivFloat").hide()
-//			setTimeout(function(){
-//				$(".newDivFloat").show()
-//			}, 10000)
-
+			setTimeout(function(){
+				$(".newDivFloat").show()
+			}, 10000)
 		})
+
+
+
+		function sizeFloat(){
+			$('.newDivFloat').css('left', function() {
+				return $(window).width() / 2 - 700 / 2 + 'px'
+			})
+
+			$('.newDivFloat').css('bottom', function() {
+				return $(window).height() / 2 - 449 / 2 + 'px'
+			})
+		}
+
+		// 初始化先调用一下
+		sizeFloat()
+
+		$(window).resize(sizeFloat);
+
+
 		$(window).scroll(function () {
 			if ($(document).scrollTop() + $(window).height() >= $(document).height() - 83) {
 				$('div#chat').hide()

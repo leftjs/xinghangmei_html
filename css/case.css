@@ -2,6 +2,11 @@ div .nav .wp ul #case a{
     color: #AB8751;
 }
 
+
+.center {
+    border-top: 2px solid #231f20;
+}
+
 .center .banner img {
     width: 960px;
 }

@@ -2,7 +2,12 @@
 div .nav .wp ul #home a{
     color: #AB8751;
 }
+
+
 /* center */
+.center {
+    border-top: 2px solid #231f20;
+}
 /* center */
 /* banner */
 .center .banner {
@@ -11,7 +16,9 @@ div .nav .wp ul #home a{
     overflow: hidden;
     position: relative;
     background: white;
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -44,6 +51,19 @@ div .nav .wp ul #home a{
     max-width: 1440px;
 }
 
+.center .swiper-slide-img#banner1 {
+    background: url("../images/case_banner.png") no-repeat;
+}
+.center .swiper-slide-img#banner2 {
+    background: url("../images/banner.png") no-repeat;
+}
+.center .swiper-slide-img#banner3 {
+    background: url("../images/case_banner.png") no-repeat;
+}
+.center .swiper-slide-img#banner4 {
+    background: url("../images/banner.png") no-repeat;
+}
+
 
 .center .banner .swiper-pagination {
     position: absolute;
@@ -56,6 +76,15 @@ div .nav .wp ul #home a{
 .center .tabs {
     width: 380px;
 }
+
+.center .tabs .head_tabs {
+    cursor: pointer;
+}
+
+.center .tabs .normal_tabs li {
+    cursor: pointer;
+}
+
 .center .tabs .tabs_title span{
     font-size: 28px;
     padding: 25px 0;
@@ -820,7 +849,7 @@ div#chat .container .form button {
 .newDivFloat {
     position: fixed;
     bottom: 30%;
-    left: 30%;
+    left: 25%;
     margin-bottom: 0px;
     z-index: 2;
     width: 700px;
