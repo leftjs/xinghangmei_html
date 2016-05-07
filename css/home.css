@@ -769,6 +769,7 @@ div .nav .wp ul #home a{
 /*chat*/
 div#chat {
     width:100%;
+    min-width: 1100px;
     position:fixed;
     height:187px;
     bottom:0px;
@@ -776,6 +777,17 @@ div#chat {
     right:0px;
     margin-bottom:0px;
     z-index: 2;
+}
+
+div#chat a {
+    position: absolute;
+
+    right: 10px;
+    bottom: 87px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    background: url("../images/close.png") no-repeat;
 
 }
 div#chat .container {
@@ -844,6 +856,17 @@ div#chat .container .form button {
     bottom: 0px;
     background: transparent;
 }
+
+div.open_chat {
+    position: fixed;
+    left: 0px;
+    bottom: 110px;
+    width: 34px;
+    height: 94px;
+    display: none;
+    cursor: pointer;
+}
+
 
 
 .newDivFloat {

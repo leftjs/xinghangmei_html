@@ -652,7 +652,12 @@
 <div class="footer">
 	<img src="images/footer.png" alt="">
 </div>
+
+<div class="open_chat">
+	<img src="images/opportunite_footer_1.png" alt="">
+</div>
 <div id="chat">
+	<a href="javascript:void(0);"></a>
 	<div class="container">
 		<div class="img"></div>
 		<div class="form">
@@ -665,7 +670,7 @@
 
 <div class="newDivFloat">
 	<img src="images/close.png" alt="">
-	<a href="">快捷咨询入口></a>
+	<a href="javascript:void(0);">快捷咨询入口></a>
 	<textarea name="question" id="" cols="30" rows="10" placeholder="在此输入您想了解的问题,我们将立即为您提供帮助"></textarea>
 	<button class="send">发送</button>
 	<button class="refer">咨询</button>
@@ -683,6 +688,8 @@
 </script>
 <![endif]-->
 <script>
+
+//	大海报, banner的滚动,参数设置可以参考http://idangero.us/swiper/demos/#.Vy3XWRV95TY
 	var mySwiper = new Swiper ('.banner', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -698,10 +705,8 @@
 	})
 
 
-	function setOffset(){
 
-	}
-
+//	tab的滚动动画
 	function resizeCircle(){
 		$('.no1 .no1_left .no1_left_tab .tab_imgs').map(function (ele) {
 //			console.log($(this).children().size())
@@ -719,9 +724,27 @@
 	}
 
 	$(document).ready(function() {
+
+//		滚动动画间隔为2秒
 		setInterval('resizeCircle()', 2000)
-//		resizeCircle()
-//		setInterval('resizeCircle()',1000)
+
+
+//		关闭footer_chat
+		$("div#chat a").click(function() {
+			$("div#chat").animate({left: '-100%'},'slow', function() {
+				$('div.open_chat').css('display', 'block')
+			})
+		})
+
+//		打开footer_chat
+		$("div.open_chat").click(function() {
+			$("div#chat").animate({left: '0'},'slow', function() {
+				$('div.open_chat').css('display', 'none')
+			})
+		})
+
+
+//		no2处的换页效果
 		$(".buttons a").hover(function() {
 			$(".buttons a").map(function(ele){
 				$(this).removeClass("selected")
@@ -734,6 +757,8 @@
 			$($('.no2_container').get(parseInt($(this).attr('id').substring(3,4)))).addClass('selected')
 		})
 
+
+//		品牌荣誉处的换页
 		$(".certificate_buttons button").hover(function() {
 			$(".certificate_buttons button").map(function() {
 				$(this).removeClass('selected')
@@ -748,6 +773,8 @@
 
 		})
 
+
+//		对话框在关闭10s后自动弹出
 		$(".newDivFloat img").click(function(){
 			$(".newDivFloat").hide()
 			setTimeout(function(){
@@ -757,6 +784,7 @@
 
 
 
+//		刷新float位置
 		function sizeFloat(){
 			$('.newDivFloat').css('left', function() {
 				return $(window).width() / 2 - 700 / 2 + 'px'
@@ -770,9 +798,13 @@
 		// 初始化先调用一下
 		sizeFloat()
 
+
+//		页面大小调整时刷新float的位置
 		$(window).resize(sizeFloat);
 
 
+
+//		监听页面滚动,当页面滚动到最下方时候隐藏footer悬浮,避免遮挡
 		$(window).scroll(function () {
 			if ($(document).scrollTop() + $(window).height() >= $(document).height() - 83) {
 				$('div#chat').hide()
