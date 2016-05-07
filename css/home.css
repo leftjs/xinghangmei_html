@@ -11,17 +11,16 @@ div .nav .wp ul #home a{
 /* center */
 /* banner */
 .center .banner {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 441px;
     overflow: hidden;
     position: relative;
     background: white;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
 
 }
-
-
 
 .center .swiper-slide {
     text-align: center;
