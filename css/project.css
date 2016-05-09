@@ -22,15 +22,17 @@ div .menus .menu {
 }
 
 div .items {
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-wrap: wrap;
+}
 
+div .items.selected{
+    display: flex;
 }
 
 div .items .item {
     margin-top: 50px;
-
     width: 309px;
     height: auto;
 }

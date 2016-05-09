@@ -187,11 +187,11 @@ div.story .tab .image {
 
 div.story .tab img.barcode {
     display: none;
-    width: 85px;
+    width: 100px;
     height: auto;
     position: absolute;
-    left: 69px;
-    top: 23px;
+    left: 61px;
+    top: 15px;
 }
 
 div.story .tab .image:hover img.barcode {
